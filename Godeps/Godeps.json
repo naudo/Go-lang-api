@@ -1,0 +1,10 @@
+{
+	"ImportPath": "naudo.de/foo",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/fiorix/go-redis/redis",
+			"Rev": "d70f8296d42ffffde5a08e250501a3c1aed4f1d8"
+		}
+	]
+}
