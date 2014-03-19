@@ -1,1 +1,1 @@
-web: foo
+web: ./foo
