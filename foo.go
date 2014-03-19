@@ -7,13 +7,16 @@ import(
     "github.com/fiorix/go-redis/redis"
     "encoding/json"
     "log"
+    "os"
 )
 
 func main() {
-    fmt.Println("binding to / on port 4000")
+    port := os.Getenv("PORT")
+
+    fmt.Println("binding to / on port " + port)
     http.HandleFunc("/", hello)
 
-    log.Fatal(http.ListenAndServe(":4000", nil))
+    log.Fatal(http.ListenAndServe(":"+ port, nil))
 } 
 
 
